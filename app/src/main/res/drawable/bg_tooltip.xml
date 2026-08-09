@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Fixed dark bubble in both themes (not sourced from surface/background) so it always
+     reads as a floating tooltip and its accent-colored text always has good contrast. -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="@color/tooltip_background" />
+    <corners android:radius="12dp" />
+</shape>

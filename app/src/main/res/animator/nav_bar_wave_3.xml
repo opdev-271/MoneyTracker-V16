@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="sequentially">
+    <objectAnimator
+        android:propertyName="scaleY"
+        android:valueFrom="1"
+        android:valueTo="0.65"
+        android:valueType="floatType"
+        android:duration="140"
+        android:startOffset="180"
+        android:interpolator="@android:interpolator/accelerate_quad" />
+    <objectAnimator
+        android:propertyName="scaleY"
+        android:valueFrom="0.65"
+        android:valueTo="1.25"
+        android:valueType="floatType"
+        android:duration="160"
+        android:interpolator="@android:interpolator/decelerate_quad" />
+    <objectAnimator
+        android:propertyName="scaleY"
+        android:valueFrom="1.25"
+        android:valueTo="1"
+        android:valueType="floatType"
+        android:duration="180"
+        android:interpolator="@android:interpolator/decelerate_quad" />
+</set>

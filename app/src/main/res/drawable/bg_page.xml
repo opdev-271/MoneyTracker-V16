@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Page background for every full-screen root (and the window background itself):
+     the flat theme color with a tiled grain bitmap on top. The tile lives in
+     drawable-nodpi so it is never density-scaled - it repeats at exactly 1:1 pixels,
+     which is what keeps the grain fine instead of blurring into a grey wash on
+     high-density screens. @color/texture_grain is transparent in the dark theme, so
+     this collapses back to a plain fill there. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <color android:color="@color/background" />
+    </item>
+    <item>
+        <bitmap
+            android:src="@drawable/tex_grain"
+            android:tileMode="repeat"
+            android:tint="@color/texture_grain" />
+    </item>
+</layer-list>

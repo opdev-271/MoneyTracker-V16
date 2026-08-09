@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Deliberately identical to surface: the whole app reads as one flat dark
+         page, with cards/sheets separated only by a hairline stroke or a drop
+         shadow, never by a second background tone. -->
+    <color name="background">#1F221D</color>
+    <color name="surface">#1F221D</color>
+    <color name="surface_variant">#2B2E27</color>
+    <color name="surface_variant_dark">#363A32</color>
+
+    <color name="surface_glass">#F01F221D</color>
+    <color name="glass_edge">#2EFFFFFF</color>
+
+    <color name="text_primary">#F4F6EE</color>
+    <color name="text_secondary">#A4A99A</color>
+    <color name="text_tertiary">#6F746A</color>
+
+    <color name="icon_primary">#F4F6EE</color>
+    <color name="on_surface_variant">#F4F6EE</color>
+
+    <!-- On the dark background the lime itself is the income color,
+         and the coral accent doubles as the expense color. -->
+    <color name="income_green">#D9F55F</color>
+    <color name="expense_red">#F2907B</color>
+
+    <color name="accent">#D9F55F</color>
+    <color name="accent_on_surface">#D9F55F</color>
+    <color name="accent_lavender">#B9B3F4</color>
+    <color name="accent_coral">#F2907B</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <!-- Now doing real work as the card/sheet/pill outline against an identical
+         surface/background fill, not just a list-row hairline, so it needs to read
+         clearly lighter than that fill rather than barely-there. -->
+    <color name="divider">#3C4038</color>
+
+    <!-- Unlike the light theme, background and surface here are the same color, so the
+         stroke is the only thing separating a card from the page and has to stay. -->
+    <color name="card_stroke">#3C4038</color>
+
+    <!-- Left at the platform default: a shadow on a near-black page is barely visible
+         anyway, and warming it would only tint the few pixels that do show. -->
+    <color name="shadow_ambient">#FF000000</color>
+    <color name="shadow_spot">#FF000000</color>
+
+    <!-- Lime stays light in dark mode too, so on-accent content stays dark. -->
+    <color name="on_accent_text">#181A12</color>
+    <color name="on_accent_muted">#99181A12</color>
+    <color name="on_accent_container">#1F181A12</color>
+
+    <!-- Texture layer (see the long note in values/colors.xml). The dark theme's
+         surfaces already separate from each other by tone, so the grain is tinted
+         fully transparent and every gradient collapses to its flat original color -
+         the same drawables therefore render exactly as they did before. -->
+    <color name="texture_grain">#00FFFFFF</color>
+
+    <color name="card_gradient_top">#1F221D</color>
+    <color name="card_gradient_bottom">#1F221D</color>
+
+    <color name="surface_variant_gradient_top">#2B2E27</color>
+    <color name="surface_variant_gradient_bottom">#2B2E27</color>
+
+    <color name="accent_gradient_top">#D9F55F</color>
+    <color name="accent_gradient_bottom">#D9F55F</color>
+
+    <color name="lavender_gradient_top">#B9B3F4</color>
+    <color name="lavender_gradient_bottom">#B9B3F4</color>
+</resources>

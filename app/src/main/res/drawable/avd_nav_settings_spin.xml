@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Full 360° gear spin for the settings tab tap (ends back at its rest state). -->
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_nav_settings">
+    <target
+        android:name="gear"
+        android:animation="@animator/nav_gear_spin" />
+</animated-vector>

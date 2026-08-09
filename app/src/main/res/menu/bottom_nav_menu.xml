@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_nav_home"
+        android:title="@string/nav_home" />
+    <item
+        android:id="@+id/walletFragment"
+        android:icon="@drawable/ic_nav_wallet"
+        android:title="@string/nav_wallet" />
+    <!-- Non-navigable spacer that keeps the middle of the pill free for the
+         floating add-transaction button overlaid in activity_main. -->
+    <item
+        android:id="@+id/nav_placeholder"
+        android:enabled="false"
+        android:title="" />
+    <!-- Analytics + settings use animated-vector icons; their static frame renders
+         identically to a plain vector and still tints via itemIconTint, but tapping
+         the tab can start the animation (see MainActivity.animateNavIcon). -->
+    <item
+        android:id="@+id/analyticsFragment"
+        android:icon="@drawable/avd_nav_analytics_wave"
+        android:title="@string/nav_analytics" />
+    <item
+        android:id="@+id/settingsFragment"
+        android:icon="@drawable/avd_nav_settings_spin"
+        android:title="@string/nav_settings" />
+</menu>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_padding">20dp</dimen>
+    <!-- Bottom inset every scrolling screen behind the nav pill reserves: the pill's own
+         72dp + its 20dp bottom margin + 20dp so the last row clears both the pill and the
+         quick-add button that overhangs 14dp above it. -->
+    <dimen name="bottom_nav_inset">112dp</dimen>
+    <!-- Softer than the reference design's 24/18: with the outlines gone, the corner
+         is the whole silhouette of a card, and a rounder one reads as a physical
+         object rather than a clipped rectangle. -->
+    <dimen name="card_corner_radius">28dp</dimen>
+    <dimen name="card_corner_radius_small">22dp</dimen>
+    <dimen name="circle_button_size">56dp</dimen>
+    <dimen name="circle_button_icon_size">22dp</dimen>
+    <dimen name="list_icon_size">44dp</dimen>
+    <dimen name="spacing_xs">4dp</dimen>
+    <dimen name="spacing_s">8dp</dimen>
+    <dimen name="spacing_m">16dp</dimen>
+    <dimen name="spacing_l">24dp</dimen>
+    <dimen name="spacing_xl">32dp</dimen>
+</resources>

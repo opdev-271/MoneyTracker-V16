@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Money Tracker</string>
+
+    <!-- Home -->
+    <string name="home_welcome_back">MoneyTracker</string>
+    <string name="greeting_morning">Guten Morgen,</string>
+    <string name="greeting_afternoon">Guten Tag,</string>
+    <string name="greeting_evening">Guten Abend,</string>
+    <string name="home_my_accounts">Meine Konten</string>
+    <string name="home_add_card">+ Hinzufügen</string>
+    <string name="account_balance">Kontostand</string>
+    <string name="balance_label_single">Kontostand:</string>
+    <string name="balance_label_multiple">Kontostand der Konten:</string>
+    <string name="balance_label_all">Kontostand aller Konten</string>
+    <string name="transactions_title">Letzte Transaktionen</string>
+    <string name="see_all">Mehr</string>
+    <string name="all_transactions_title">Alle Transaktionen</string>
+
+    <!-- Export -->
+    <string name="export_action">Export</string>
+    <string name="export_columns_title">Nach Excel exportieren</string>
+    <string name="export_column_date">Datum</string>
+    <string name="export_column_amount">Betrag</string>
+    <string name="export_column_type">Transaktionstyp</string>
+    <string name="export_column_account">Konto</string>
+    <string name="export_column_category">Kategorie</string>
+    <string name="export_column_note">Notiz</string>
+    <string name="export_column_account_balance">Kontostand</string>
+    <string name="export_column_all_balance">Saldo aller Konten</string>
+    <string name="export_positive_button">Exportieren</string>
+    <string name="export_summary_title">Aktuelle Salden</string>
+    <string name="export_summary_total">Gesamt</string>
+    <string name="export_sheet_name">Transaktionen</string>
+    <string name="sent_by_you">Von Ihnen gesendet</string>
+    <string name="received_by_you">Von Ihnen erhalten</string>
+    <string name="empty_transactions">Noch keine Transaktionen</string>
+    <string name="subtitle_format">%1$s • %2$s</string>
+
+    <!-- Profile -->
+    <string name="profile_switcher_title">Profile</string>
+    <string name="add_profile_action">+ Profil hinzufügen</string>
+    <string name="add_profile_title">Profil hinzufügen</string>
+    <string name="profile_name_hint">Name</string>
+
+    <!-- Kontoauswahl für den Kontostand -->
+    <string name="balance_accounts_picker_title">Kontostand aus Konten</string>
+    <string name="action_select_all">Alle auswählen</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_home">Start</string>
+    <string name="nav_wallet">Konten</string>
+    <string name="nav_analytics">Analyse</string>
+    <string name="nav_settings">Einstellungen</string>
+
+    <!-- Add transaction -->
+    <string name="add_transaction_title">Transaktion hinzufügen</string>
+    <string name="label_expense">Ausgabe</string>
+    <string name="label_income">Einnahme</string>
+    <string name="label_amount">Betrag</string>
+    <string name="label_account">Konto</string>
+    <string name="label_category">Kategorie</string>
+    <string name="label_icon">Symbol</string>
+    <string name="label_color">Farbe</string>
+    <string name="label_description">Beschreibung</string>
+    <string name="label_date">Datum</string>
+    <string name="button_save">Speichern</string>
+    <string name="hint_amount">0.00</string>
+    <string name="hint_description">z. B. Lebensmittel</string>
+    <string name="error_amount_required">Betrag eingeben</string>
+    <string name="error_account_required">Konto auswählen</string>
+    <string name="error_category_required">Kategorie auswählen</string>
+    <string name="add_category_action">+ Kategorie hinzufügen</string>
+    <string name="add_category_title">Kategorie hinzufügen</string>
+    <string name="edit_category_title">Kategorie bearbeiten</string>
+    <string name="category_name_hint">Kategoriename</string>
+    <string name="error_category_name_required">Kategorienamen eingeben</string>
+
+    <!-- Kategorienverwaltung -->
+    <string name="categories_title">Kategorien</string>
+    <string name="categories_subtitle">Tippe auf eine Kategorie, um Name, Symbol oder Farbe zu ändern.</string>
+    <string name="categories_empty">Noch keine Kategorien</string>
+    <string name="dialog_delete_category_title">Kategorie löschen?</string>
+    <string name="dialog_delete_category_message">Diese Kategorie wird dauerhaft gelöscht.</string>
+    <plurals name="dialog_delete_category_message_used">
+        <item quantity="one">%1$d Transaktion nutzt diese Kategorie. Sie bleibt erhalten, aber ohne Kategorie.</item>
+        <item quantity="other">%1$d Transaktionen nutzen diese Kategorie. Sie bleiben erhalten, aber ohne Kategorie.</item>
+    </plurals>
+
+    <!-- Accounts -->
+    <string name="wallet_title">Konten</string>
+    <string name="wallet_add_account">Konto hinzufügen</string>
+    <string name="account_name_hint">Kontoname</string>
+    <string name="account_currency_hint">Währung</string>
+    <string name="account_initial_balance_hint">Anfangssaldo</string>
+    <string name="account_number_hint">Kontonummer (optional)</string>
+    <string name="account_type_label">Kontotyp</string>
+    <string name="account_type_cash">Bargeld</string>
+    <string name="account_type_bank">Bankkonto</string>
+    <string name="account_type_savings">Sparen</string>
+    <string name="dialog_add_account_title">Konto hinzufügen</string>
+    <string name="dialog_edit_account_title">Konto bearbeiten</string>
+    <string name="dialog_delete_account_title">Konto löschen?</string>
+    <string name="dialog_delete_account_message">„%1$s“ und alle zugehörigen Transaktionen und Sparumschläge werden endgültig gelöscht. Das kann nicht rückgängig gemacht werden.</string>
+
+    <!-- Savings envelopes -->
+    <string name="savings_total_balance">Gesamtguthaben</string>
+    <string name="savings_in_envelopes">In Umschlägen</string>
+    <string name="savings_unallocated">Nicht zugewiesen</string>
+    <string name="savings_envelopes_title">Umschläge</string>
+    <string name="savings_add_envelope">+ Hinzufügen</string>
+    <string name="savings_empty">Noch keine Umschläge</string>
+    <string name="dialog_add_envelope_title">Umschlag hinzufügen</string>
+    <string name="dialog_edit_envelope_title">Umschlag bearbeiten</string>
+    <string name="envelope_name_hint">Name des Umschlags, z. B. Auto</string>
+    <string name="envelope_goal_hint">Zielbetrag</string>
+    <string name="savings_deposit_title">Geld senden an %1$s</string>
+    <string name="savings_deposit_source_label">Vom Konto</string>
+    <string name="savings_deposit_amount_hint">Betrag</string>
+    <string name="savings_deposit_action">Senden</string>
+    <string name="error_envelope_name_required">Namen des Umschlags eingeben</string>
+    <string name="error_amount_positive">Betrag größer als null eingeben</string>
+    <string name="envelope_summary_format">%1$s in Umschlägen</string>
+    <string name="action_delete">Löschen</string>
+    <string name="action_edit">Bearbeiten</string>
+    <string name="action_duplicate">Duplizieren</string>
+    <string name="action_cancel">Abbrechen</string>
+    <string name="edit_transaction_title">Transaktion bearbeiten</string>
+    <string name="empty_accounts">Noch keine Konten</string>
+
+    <!-- Analytics -->
+    <string name="analytics_title">Analyse</string>
+    <string name="analytics_income">Einnahmen</string>
+    <string name="analytics_expense">Ausgaben</string>
+    <string name="analytics_by_category">Ausgaben nach Kategorie</string>
+    <string name="analytics_period_day">Tag</string>
+    <string name="analytics_period_week">Woche</string>
+    <string name="analytics_period_month">Monat</string>
+    <string name="analytics_period_year">Jahr</string>
+    <string name="analytics_no_data">Noch keine Ausgaben in diesem Zeitraum</string>
+    <string name="analytics_filter_all">Alle</string>
+    <string name="analytics_trend_up">Ausgaben %1$s höher als letzte Periode</string>
+    <string name="analytics_trend_down">Ausgaben %1$s niedriger als letzte Periode</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Einstellungen</string>
+    <string name="settings_language">Sprache</string>
+    <string name="settings_language_english">English</string>
+    <string name="settings_language_czech">Čeština</string>
+    <string name="settings_language_german">Deutsch</string>
+    <string name="settings_appearance">Erscheinungsbild</string>
+    <string name="theme_light">Hell</string>
+    <string name="theme_dark">Dunkel</string>
+    <string name="theme_system">System</string>
+    <string name="settings_home_screen">Startbildschirm</string>
+    <string name="settings_home_show_balance">Kontostand</string>
+    <string name="settings_home_show_actions">Ausgaben- und Einnahmen-Buttons</string>
+    <string name="settings_home_show_accounts">Meine Konten</string>
+    <string name="settings_home_show_transactions">Letzte Transaktionen</string>
+    <string name="settings_hide_balance">Kontostände auf der Startseite ausblenden</string>
+    <string name="settings_color_code_transactions">Einnahmen und Ausgaben farblich kennzeichnen</string>
+    <string name="settings_disable_animations">Animationen deaktivieren (für ältere Telefone)</string>
+    <string name="settings_profile_name">Name</string>
+    <string name="settings_categories_summary">Namen, Symbole und Farben</string>
+    <string name="settings_about">Über die App</string>
+    <string name="settings_about_body">Money Tracker · Version 1.0</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title">Willkommen!</string>
+    <string name="onboarding_subtitle">Bevor es losgeht, richten wir ein paar Dinge ein</string>
+    <string name="onboarding_name_label">Ihr Name</string>
+    <string name="onboarding_name_hint">z. B. Anna</string>
+    <string name="onboarding_currency_label">Bevorzugte Währung</string>
+    <string name="onboarding_avatar_label">Avatar auswählen</string>
+    <string name="onboarding_get_started">Loslegen</string>
+
+    <!-- Seeded categories (looked up by key, see DisplayNameResolver) -->
+    <string name="category_food">Essen</string>
+    <string name="category_transport">Transport</string>
+    <string name="category_shopping">Einkaufen</string>
+    <string name="category_bills">Rechnungen</string>
+    <string name="category_entertainment">Unterhaltung</string>
+    <string name="category_health">Gesundheit</string>
+    <string name="category_other_expense">Sonstiges</string>
+    <string name="category_salary">Gehalt</string>
+    <string name="category_gift">Geschenk</string>
+    <string name="category_other_income">Sonstiges</string>
+
+    <string name="account_cash_default">Bargeld</string>
+
+    <string-array name="currency_codes">
+        <item>CZK</item>
+        <item>EUR</item>
+        <item>USD</item>
+        <item>GBP</item>
+    </string-array>
+</resources>

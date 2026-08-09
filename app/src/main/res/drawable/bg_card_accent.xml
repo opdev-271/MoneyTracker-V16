@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <!-- The balance card is the app's largest block of flat color, so it gets the
+         widest gradient spread: a lit top edge falling to a deeper lime. Both stops
+         collapse to the flat accent in the dark theme. -->
+    <gradient
+        android:angle="270"
+        android:endColor="@color/accent_gradient_bottom"
+        android:startColor="@color/accent_gradient_top"
+        android:type="linear" />
+    <corners android:radius="28dp" />
+</shape>

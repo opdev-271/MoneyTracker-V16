@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Staggered per-bar bounce ("random wave") for the analytics tab tap. -->
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_nav_analytics">
+    <target
+        android:name="bar1"
+        android:animation="@animator/nav_bar_wave_1" />
+    <target
+        android:name="bar2"
+        android:animation="@animator/nav_bar_wave_2" />
+    <target
+        android:name="bar3"
+        android:animation="@animator/nav_bar_wave_3" />
+</animated-vector>

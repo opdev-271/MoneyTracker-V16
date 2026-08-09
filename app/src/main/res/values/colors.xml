@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The page is a tone below the cards, not identical to them. That single
+         difference is what lets every card drop its outline: a white card on a warm
+         off-white page separates by tone and shadow, the way a physical card sits on
+         paper, instead of being drawn as a hairline rectangle. (The dark theme keeps
+         background == surface and keeps its stroke - see card_stroke.) -->
+    <color name="background">#F2F4EC</color>
+    <color name="surface">#FFFFFFFF</color>
+    <!-- Now has to read as a well *below* the page, not just below the card, so it is
+         a step darker than it used to be. -->
+    <color name="surface_variant">#E7EBDC</color>
+    <color name="surface_variant_dark">#DADECB</color>
+
+    <!-- Frosted-glass approximation (no real-time blur at minSdk 24): a translucent
+         surface fill plus a light rim to catch the eye, used only on the most
+         prominent "floating" surface (bottom nav pill). -->
+    <color name="surface_glass">#F2FFFFFF</color>
+    <color name="glass_edge">#40FFFFFF</color>
+
+    <color name="text_primary">#181A12</color>
+    <color name="text_secondary">#7C8074</color>
+    <color name="text_tertiary">#AEB2A4</color>
+
+    <color name="icon_primary">#181A12</color>
+    <color name="on_surface_variant">#181A12</color>
+
+    <!-- Lime works as a fill in both themes, but as *text* on a light background
+         it washes out, so the light theme's income color is a darker olive-lime. -->
+    <color name="income_green">#7A9C18</color>
+    <color name="expense_red">#E2674A</color>
+
+    <!-- Signature lime accent of the design; fills chips, the balance card,
+         primary buttons and the selected nav item. -->
+    <color name="accent">#D9F55F</color>
+    <!-- Accent variant with enough contrast to act as text/icon color on
+         surface/background (the raw lime is too light for that in light theme). -->
+    <color name="accent_on_surface">#7A9C18</color>
+    <color name="accent_lavender">#B9B3F4</color>
+    <color name="accent_coral">#F2907B</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <!-- Hairline for real separators (list rules, inline rows) - still wanted. -->
+    <color name="divider">#E4E7DA</color>
+
+    <!-- Outline for raised surfaces (cards, sheets, pills, circular buttons).
+         Transparent here on purpose: an outline around every element is what made the
+         light theme read as a wireframe. Depth comes from the page/card tone
+         difference plus the shadow instead. The dark theme, where background and
+         surface are the same color, still needs a real stroke and defines one. -->
+    <color name="card_stroke">#00000000</color>
+
+    <!-- Elevation shadow tint, applied by util/ElevationShadows on API 28+.
+         The platform default is pure black, which over a warm off-white page reads as a
+         grey smudge. These are warm near-blacks from the same family as text_primary
+         (#181A12), so a card's shadow looks like the page in shade rather than a grey
+         drop. Kept fully opaque: the alpha that reaches the screen comes from the
+         theme's ambient/spot shadow alphas scaled by elevation, and the color's own
+         alpha would only ever scale that down further. -->
+    <color name="shadow_ambient">#FF4A4433</color>
+    <color name="shadow_spot">#FF33301F</color>
+
+    <!-- Chart scrub tooltip: intentionally the same fixed bubble color in both themes
+         (not sourced from surface/background) so accent/accent_coral text inside it
+         always has reliable contrast. Deliberately lighter than the dark theme's own
+         surface (#1F221D, now identical to background) so the bubble stays visible
+         there instead of disappearing into the chart card behind it. -->
+    <color name="tooltip_background">#3A3D34</color>
+    <color name="tooltip_text">#F4F6EE</color>
+
+    <!-- Text/icons sitting on an accent(lime)-filled surface. The lime is light
+         in both themes, so these stay dark and do NOT flip. -->
+    <color name="on_accent_text">#181A12</color>
+    <color name="on_accent_muted">#99181A12</color>
+    <!-- Translucent dark fill for small circular buttons on the lime card. -->
+    <color name="on_accent_container">#1F181A12</color>
+
+    <!-- ===== Texture layer =====
+         The light theme used to be flat #FFFFFF everywhere, so a card and the page
+         behind it were the same literal color and only a hairline told them apart.
+         Two things break that up now, and both are authored as colors so the dark
+         theme can neutralize them without a second set of drawables:
+
+         1. @drawable/bg_page tiles a grain bitmap over the page. The bitmap is white
+            with the speckle in its alpha channel, so this tint sets both the grain's
+            color and (via its own alpha) how strong it is.
+         2. Every card/pill/row shape carries a top->bottom gradient instead of a solid
+            fill. The gradients live inside <shape>, so they follow the corner radius -
+            unlike a tiled bitmap, which would spill out of the rounded corners. -->
+    <!-- Softer than it was: the page is a tinted tone now, and grain that read as
+         texture on pure white reads as dirt on a tint. -->
+    <color name="texture_grain">#12181A12</color>
+
+    <!-- Cards stay essentially white - just enough fall-off to round the surface. The
+         separation from the page is the page's own tint doing the work, so a card
+         gradient dark enough to be noticed would only muddy it. -->
+    <color name="card_gradient_top">#FFFFFFFF</color>
+    <color name="card_gradient_bottom">#FFFAFBF5</color>
+
+    <!-- surface_variant fills (toggle tracks, muted pills, inset rows). -->
+    <color name="surface_variant_gradient_top">#FFEDF0E3</color>
+    <color name="surface_variant_gradient_bottom">#FFE1E5D4</color>
+
+    <!-- The lime balance card is the largest single block of flat color in the app,
+         so it gets the widest gradient spread of anything here. -->
+    <color name="accent_gradient_top">#FFE6FB92</color>
+    <color name="accent_gradient_bottom">#FFCCEE41</color>
+
+    <color name="lavender_gradient_top">#FFC9C4F7</color>
+    <color name="lavender_gradient_bottom">#FFAAA3F0</color>
+</resources>

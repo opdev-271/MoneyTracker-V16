@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- View tags used by ViewAnimations to keep at most one of its animators per view,
+         so a recycled/rebound view never keeps a half-finished animation's state. -->
+    <item name="tag_entrance_animator" type="id" />
+    <item name="tag_text_mask_animator" type="id" />
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="oval">
+    <!-- Radial rather than linear: on a circle an off-center light source reads as a
+         rounded, physical badge, where a top-to-bottom ramp just looks like a cut-out
+         of the card behind it. gradientRadius is a percentage of the shape's smallest
+         side, so it scales with whatever size the badge is used at. -->
+    <gradient
+        android:centerX="0.35"
+        android:centerY="0.3"
+        android:endColor="@color/surface_variant_gradient_bottom"
+        android:gradientRadius="70%"
+        android:startColor="@color/surface_variant_gradient_top"
+        android:type="radial" />
+</shape>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Money Tracker</string>
+
+    <!-- Home -->
+    <string name="home_welcome_back">MoneyTracker</string>
+    <string name="greeting_morning">Good morning,</string>
+    <string name="greeting_afternoon">Good afternoon,</string>
+    <string name="greeting_evening">Good evening,</string>
+    <string name="home_my_accounts">My accounts</string>
+    <string name="home_add_card">+ Add</string>
+    <string name="account_balance">Account balance</string>
+    <string name="balance_label_single">Balance on account:</string>
+    <string name="balance_label_multiple">Balance on accounts:</string>
+    <string name="balance_label_all">Balance on all accounts</string>
+    <string name="transactions_title">Recent transactions</string>
+    <string name="see_all">More</string>
+    <string name="all_transactions_title">All transactions</string>
+
+    <!-- Export -->
+    <string name="export_action">Export</string>
+    <string name="export_columns_title">Export to Excel</string>
+    <string name="export_column_date">Date</string>
+    <string name="export_column_amount">Amount</string>
+    <string name="export_column_type">Transaction type</string>
+    <string name="export_column_account">Account</string>
+    <string name="export_column_category">Category</string>
+    <string name="export_column_note">Note</string>
+    <string name="export_column_account_balance">Account balance</string>
+    <string name="export_column_all_balance">Balance of all accounts</string>
+    <string name="export_positive_button">Export</string>
+    <string name="export_summary_title">Current balances</string>
+    <string name="export_summary_total">Total</string>
+    <string name="export_sheet_name">Transactions</string>
+    <string name="sent_by_you">Sent by you</string>
+    <string name="received_by_you">Received by you</string>
+    <string name="empty_transactions">No transactions yet</string>
+    <string name="subtitle_format">%1$s • %2$s</string>
+
+    <!-- Profiles -->
+    <string name="profile_switcher_title">Profiles</string>
+    <string name="add_profile_action">+ Add profile</string>
+    <string name="add_profile_title">Add profile</string>
+    <string name="profile_name_hint">Name</string>
+
+    <!-- Balance account picker -->
+    <string name="balance_accounts_picker_title">Balance from accounts</string>
+    <string name="action_select_all">Select all</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_wallet">Accounts</string>
+    <string name="nav_analytics">Analytics</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Add transaction -->
+    <string name="add_transaction_title">Add transaction</string>
+    <string name="label_expense">Expense</string>
+    <string name="label_income">Income</string>
+    <string name="label_amount">Amount</string>
+    <string name="label_account">Account</string>
+    <string name="label_category">Category</string>
+    <string name="label_icon">Icon</string>
+    <string name="label_color">Color</string>
+    <string name="label_description">Description</string>
+    <string name="label_date">Date</string>
+    <string name="button_save">Save</string>
+    <string name="hint_amount">0.00</string>
+    <string name="hint_description">e.g. Groceries</string>
+    <string name="error_amount_required">Enter an amount</string>
+    <string name="error_account_required">Choose an account</string>
+    <string name="error_category_required">Choose a category</string>
+    <string name="add_category_action">+ Add category</string>
+    <string name="add_category_title">Add category</string>
+    <string name="edit_category_title">Edit category</string>
+    <string name="category_name_hint">Category name</string>
+    <string name="error_category_name_required">Enter a category name</string>
+
+    <!-- Category management -->
+    <string name="categories_title">Categories</string>
+    <string name="categories_subtitle">Tap a category to change its name, icon or color.</string>
+    <string name="categories_empty">No categories yet</string>
+    <string name="dialog_delete_category_title">Delete category?</string>
+    <string name="dialog_delete_category_message">This category will be permanently deleted.</string>
+    <plurals name="dialog_delete_category_message_used">
+        <item quantity="one">%1$d transaction uses this category. It will be kept, but left uncategorized.</item>
+        <item quantity="other">%1$d transactions use this category. They will be kept, but left uncategorized.</item>
+    </plurals>
+
+    <!-- Accounts -->
+    <string name="wallet_title">Accounts</string>
+    <string name="wallet_add_account">Add account</string>
+    <string name="account_name_hint">Account name</string>
+    <string name="account_currency_hint">Currency</string>
+    <string name="account_initial_balance_hint">Initial balance</string>
+    <string name="account_number_hint">Account number (optional)</string>
+    <string name="account_type_label">Account type</string>
+    <string name="account_type_cash">Cash</string>
+    <string name="account_type_bank">Bank account</string>
+    <string name="account_type_savings">Savings</string>
+    <string name="dialog_add_account_title">Add account</string>
+    <string name="dialog_edit_account_title">Edit account</string>
+    <string name="dialog_delete_account_title">Delete account?</string>
+    <string name="dialog_delete_account_message">“%1$s” and all its transactions and savings envelopes will be permanently deleted. This cannot be undone.</string>
+
+    <!-- Savings envelopes -->
+    <string name="savings_total_balance">Total balance</string>
+    <string name="savings_in_envelopes">In envelopes</string>
+    <string name="savings_unallocated">Unallocated</string>
+    <string name="savings_envelopes_title">Envelopes</string>
+    <string name="savings_add_envelope">+ Add</string>
+    <string name="savings_empty">No envelopes yet</string>
+    <string name="dialog_add_envelope_title">Add envelope</string>
+    <string name="dialog_edit_envelope_title">Edit envelope</string>
+    <string name="envelope_name_hint">Envelope name, e.g. Car</string>
+    <string name="envelope_goal_hint">Goal amount</string>
+    <string name="savings_deposit_title">Send money to %1$s</string>
+    <string name="savings_deposit_source_label">From account</string>
+    <string name="savings_deposit_amount_hint">Amount</string>
+    <string name="savings_deposit_action">Send</string>
+    <string name="error_envelope_name_required">Enter an envelope name</string>
+    <string name="error_amount_positive">Enter an amount greater than zero</string>
+    <string name="envelope_summary_format">%1$s in envelopes</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_duplicate">Duplicate</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="edit_transaction_title">Edit transaction</string>
+    <string name="empty_accounts">No accounts yet</string>
+
+    <!-- Analytics -->
+    <string name="analytics_title">Analytics</string>
+    <string name="analytics_income">Income</string>
+    <string name="analytics_expense">Expense</string>
+    <string name="analytics_by_category">Expenses by category</string>
+    <string name="analytics_period_day">Day</string>
+    <string name="analytics_period_week">Week</string>
+    <string name="analytics_period_month">Month</string>
+    <string name="analytics_period_year">Year</string>
+    <string name="analytics_no_data">No expenses in this period yet</string>
+    <string name="analytics_filter_all">All</string>
+    <string name="analytics_trend_up">Expenses %1$s higher than last period</string>
+    <string name="analytics_trend_down">Expenses %1$s lower than last period</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_language_english">English</string>
+    <string name="settings_language_czech">Čeština</string>
+    <string name="settings_language_german">Deutsch</string>
+    <string name="settings_appearance">Appearance</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_system">System</string>
+    <string name="settings_home_screen">Home screen</string>
+    <string name="settings_home_show_balance">Balance</string>
+    <string name="settings_home_show_actions">Expense and income buttons</string>
+    <string name="settings_home_show_accounts">My accounts</string>
+    <string name="settings_home_show_transactions">Recent transactions</string>
+    <string name="settings_hide_balance">Hide balances on Home</string>
+    <string name="settings_color_code_transactions">Color-code income and expenses</string>
+    <string name="settings_disable_animations">Disable animations (for older phones)</string>
+    <string name="settings_profile_name">Name</string>
+    <string name="settings_categories_summary">Names, icons and colors</string>
+    <string name="settings_about">About</string>
+    <string name="settings_about_body">Money Tracker · version 1.0</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title">Welcome!</string>
+    <string name="onboarding_subtitle">Let\'s set a few things up before you start</string>
+    <string name="onboarding_name_label">Your name</string>
+    <string name="onboarding_name_hint">e.g. Jane</string>
+    <string name="onboarding_currency_label">Preferred currency</string>
+    <string name="onboarding_avatar_label">Choose an avatar</string>
+    <string name="onboarding_get_started">Get started</string>
+
+    <!-- Seeded categories (looked up by key, see DisplayNameResolver) -->
+    <string name="category_food">Food</string>
+    <string name="category_transport">Transport</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_bills">Bills</string>
+    <string name="category_entertainment">Entertainment</string>
+    <string name="category_health">Health</string>
+    <string name="category_other_expense">Other</string>
+    <string name="category_salary">Salary</string>
+    <string name="category_gift">Gift</string>
+    <string name="category_other_income">Other</string>
+
+    <string name="account_cash_default">Cash</string>
+
+    <string-array name="currency_codes">
+        <item>CZK</item>
+        <item>EUR</item>
+        <item>USD</item>
+        <item>GBP</item>
+    </string-array>
+</resources>

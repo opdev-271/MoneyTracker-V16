@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.MoneyTracker" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent</item>
+        <item name="colorPrimaryDark">@color/background</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorOnPrimary">@color/on_accent_text</item>
+        <item name="colorOnSecondary">@color/on_accent_text</item>
+        <item name="colorControlActivated">@color/accent</item>
+        <!-- The grained page drawable, not the flat color, so the texture is already
+             there during the window's pre-inflation draw and content doesn't visibly
+             swap from flat white to grained on first frame. -->
+        <item name="android:windowBackground">@drawable/bg_page</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/background</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="android:navigationBarColor" tools:targetApi="l">@color/background</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="actionModeStyle">@style/Widget.MoneyTracker.ActionMode</item>
+    </style>
+
+    <!-- The contextual action bar (transaction multi-select) inherits colorPrimary by
+         default, which is now the lime accent - its icons (icon_primary, expense_red)
+         are authored against @color/surface, so force that surface here to keep them
+         legible in both themes without any runtime icon tinting. -->
+    <style name="Widget.MoneyTracker.ActionMode" parent="Widget.AppCompat.ActionMode">
+        <item name="background">@color/surface</item>
+        <item name="titleTextStyle">@style/TextAppearance.MoneyTracker.ActionMode.Title</item>
+    </style>
+
+    <style name="TextAppearance.MoneyTracker.ActionMode.Title" parent="TextAppearance.AppCompat.Widget.ActionMode.Title">
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <!-- Every DialogFragment in the app builds its dialog with this overlay (via
+         MaterialAlertDialogBuilder) instead of the bare platform AlertDialog, so
+         add/edit sheets share the same rounded, app-colored look as the rest of the
+         app rather than the default grey system dialog. -->
+    <style name="ThemeOverlay.MoneyTracker.Dialog" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <!-- Material's dark-theme elevation overlay lightens colorSurface proportionally
+             to the view's elevation, and dialogs sit at a high default elevation - without
+             this, the dialog would render as a washed-out grey instead of the app's own
+             near-black surface color. -->
+        <item name="elevationOverlayEnabled">false</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MoneyTracker.Dialog</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorPrimary">@color/accent_on_surface</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/TextAppearance.MoneyTracker.Dialog.Title</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="colorControlNormal">@color/text_tertiary</item>
+        <item name="colorControlActivated">@color/accent_on_surface</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MoneyTracker.Dialog" parent="">
+        <item name="cornerSize">24dp</item>
+    </style>
+
+    <style name="TextAppearance.MoneyTracker.Dialog.Title" parent="MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>
